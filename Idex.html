@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Proyecto de html </title>
+        <link rel= "shorcut icon" href="">
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/estilos.css">
+    </head>
+    <body>
+       <!-- <header class="header_flex">
+           <div class="logo">
+                <img class="img_logo" src="./assets/images/codoacodo.png" alt="Logo de codo a codo"  loading="lazy"> 
+                <h2 class="texto_h2">Conferencia Bs. As.</h2>
+           </div>
+           
+             <nav class="navegador">
+                <a  class="link" href="#">La conferencia</a>
+                 <a class="link gris" href="#oradores"> Los oradores</a>
+                 <a  class="link gris" href="#lugar_y_fecha"> Lugar y fecha </a>
+                 <a  class="link gris" href="#contactanos"> Conviértete en orador</a>
+                 <a  class="link_ticket" href="./peges/comprar_tickets.html"> Comprar tikets</a>
+            </nav>
+        </header>-->
+        
+        <header >
+            <nav class="navbar navbar-expand-lg bg_gris">
+                <div class="container-fluid">
+                  <a class="navbar-brand text-white" href="#">
+                    <img src="./assets/images/codoacodo.png" alt="Logo de codo a cod " width="100" loading="lazy" >
+                    Conferencia Bs. As.
+                </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 justificado_final  pe-4 ">
+                      <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="#">La conferencia</a>
+                      <li class="nav item"><a  class="nav-link text-muted" href="#oradores"> Los oradores</a></li>
+                      <li class="nav item"><a  class="nav-link text-muted" href="#lugar_y_fecha"> Lugar y fecha </a></li>
+                      <li class="nav item"><a  class="nav-link text-muted" href="#contactanos"> Conviértete en orador</a></li>
+                      <li class="nav item "><a  class="nav-link link_ticket" href="./peges/comprar_tickets.html"> Comprar tikets</a></li>
+
+                      
+        
+                      
+                  </div>
+                </div>
+              </nav>
+        </header>
+        
+        <main>
+            <section class="section_principal">
+                
+                <div class="contenido_principal"> 
+                     <h1> Conferencia Bs. As.</h1>
+                    <p> Buenos Aires llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que estan creando el futuro de internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores del primer nivel que tenemos para ti. Te esperamos!
+                        
+                    </p>
+                    
+                   <div class="caja_links">
+                    <a class="link inline_block" href="#contactanos"> Quiero ser orador </a>
+                    <a class="link inline_block green" href="./peges/comprar_tickets.html"> Comprar tickets</a>
+                </div>
+                </div>
+              
+            </section>
+        </main>
+
+        <section class="tarjetas" id="oradores">
+            <div class="titulo_tarjetas">
+                <h2 class="textos_h2">CONOCE A LOS </h2>
+                <h3 class="textos_h3">ORADORES</h3> 
+            </div>
+            <div class="padre_de_tarjetas">
+                <div class="tarjeta_flex">
+                    <div class="tarjeta">
+                        <img class="tarjeta_imagen" src="./assets/images/steve.jpg" alt=" Steve Jobs" width= "300"  loading="lazy">
+                        <div class="tarjeta_contenido">
+                            <div class="etiquetas"><div class="java">JavaScript</div>  <div class=react>React</div></div>
+                            <h3 class="h3"> Steve Jobs</h3>
+                            <div class="tarjeta_parrafo"><p> Informático y empresario estadounidense. Padre del primer ordenador personal  y fundador de Apple Computer, probablemente la empresa mas innovadora del sector.
+                            </p> </div>
+                        </div>
+                            
+                       
+                    </div>
+            
+                    <div class="tarjeta">
+                        <img class="tarjeta_imagen" src="./assets/images/bill.jpg" alt=" Bill Gates" width= "300" loading="lazy"> 
+                        <div class="tarjeta_contenido">
+                            <div class="etiquetas"><div class="java">JavaScript</div>  <div class=react>React</div></div>
+                            <h3 class="h3"> Bill Gates</h3>
+                            <div class="tarjeta_parrafo"><p> Informático y empresario estadounidense, fundador de Microsoft. La fortuna de este precoz programador, procede del éxito arrollador de su sistema operativo, el MS-DOS (1981) que evolucionaría hasta convertise en el popular Windows 3.1 (1992) y daría lugar a las sucesivas versiones de este sistema operativo</p>
+                            </div>
+                        </div>
+                                
+                        
+                    </div>
+            
+                    <div class="tarjeta">
+                        <img class="tarjeta_imagen" src="./assets/images/ada.jpeg" alt="Ada Lovelace"width= "300" loading="lazy"> 
+                        <div class="tarjeta_contenido">
+                            <div class="etiquetas"><div class="neg">Negocios</div>  <div class= star>Startups</div></div>
+                            <h3 class="h3"> Ada Lovelace</h3>
+                            
+                            <div class="tarjeta_parrafo"><p>Homenaje a una visionaria informática victoriana. Con solo diecisiete años, asistió junto a su madre a la demostración del prototipo de una maquina diferencial diseñada para calcular  e imprimir vaalores sucesivos de una fórmula usando el método de diferencias finitas y así reducir el trabajo de producir tablas matematicas de Charles Babb </p>
+                            </div>
+                        
+                        </div>                                                       
+                    </div>
+                </div>
+            </div>           
+</section>
+<section class="section_dividida" id="lugar_y_fecha">
+    <div class="img_izq">
+
+    </div>
+
+    <div class="contenido_dere"> 
+           
+        <div class="tex_dere posicionamiento"><h3> Buenos Aires - Octubre <h3>
+            <p> Acércate a vivir una experiencia llena de conocimiento junto a otros aprendices en programacion de diferentes lugares.El evento se realizara el 01 de Noviembre en el Centro de Centro de Exposiciones de la Ciudad de Buenos Aires, y podrás presenciar relatos sobre grandes figuras de la progración como lo fueron Steve Jobs, Bill Gates, Ada lovelace.</p>
+            <a class= " link caja_links inline_block" href=""> Conoce mas </a></div>
+        
+    </div>
+</section>
+
+
+<!--
+<section class="formulario" id="contactanos">
+    <h3 class="textos_h2">CONVERTITE EN UN</h3>
+    <h2 class="textos_h3">ORADOR</h2>
+    <h2 class="textos_h2">Anotate como orador para dar una charla ignite. cuentanos de que quieres hablar</h2>
+    <form action="">
+
+        <div>
+            <input type="text" placeholder="Nombre">
+            <input type="text" placeholder="Apellido">
+        </div>
+
+        <div>
+            <textarea name="" id="" cols="45" rows="10" placeholder="¿Sobre que quieres hablar?"></textarea>
+        </div>
+        <p>recuerda incluir un titulo para tu charla </p>
+        <div>
+            <input type="submit" value="Enviar formulario"> 
+        </div>
+        
+    </form>
+</section>-->
+
+<section class="formulario container" id="contactanos">
+    <h3 class="textos_h2">CONVERTITE EN UN</h3>
+    <h2 class="textos_h3">ORADOR</h2>
+    <h2 class="textos_h2">Anotate como orador para dar una charla ignite. cuentanos de que quieres hablar</h2>
+<div class="row">
+    <div class="mb-3 d-flex" >
+        <input type="text" class="form-control"id="exampleFormControlInput1" placeholder="Nombre">
+        <input type="text" class="form-control"id="exampleFormControlInput2" placeholder="Apellido">
+       
+      </div>
+</div>
+ <div class="row">
+    <div class="mb-3">
+        <textarea name=""class="form-control" id="exampleFormControlTextarea1"  cols="50" rows="10" placeholder="¿Sobre que quieres hablar?"></textarea>
+     </div>
+ </div>   
+ <p>recuerda incluir un titulo para tu charla </p>
+        <div>
+            <input class="green enviar" type="submit" value="Enviar formulario"> 
+        </div>
+  
+</section> 
+
+<footer class="bg_footer">
+   <div class="container">
+        <div class="row ">
+            <div class="col pt-3 pb-3"><a  class= "text-white text-decoration-none"  href="">Preguntas frecuntes</a></div>
+            <div class="col pt-3 pb-3"><a  class= "text-white text-decoration-none"  href="">Contáctanos</a></div>
+            <div class="col pt-3 pb-3"><a  class= "text-white text-decoration-none"  href="">Prensa</a></div>
+            <div class="col pt-3 pb-3"><a  class= "text-white text-decoration-none"  href="">Conferencia</a></div>
+            <div class="col pt-3 pb-3"><a  class= "text-white text-decoration-none " href="">Términos y condiciones</a></div>
+            <div class="col pt-3 pb-3"><a  class= "text-white text-decoration-none"  href="">Privacidad</a></div>
+            <div class="col pt-3 pb-3"><a  class= "text-white text-decoration-none"   href="">Estudiantes</a></div>
+        </div>
+    </div>
+    
+  
+    
+</footer>
+    
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+ 

@@ -1,0 +1,322 @@
+
+@import url('https://fonts.googleapis.com/css2? family= Montserrat:ital,wght@0,200;0,700;1,100;1,200;1,300;1,400;1,500 & display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg_gris{
+    background-color: rgb(52,58,64);
+}
+.header_flex{
+    background-color: rgb(52,58,64);
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+  
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    width:50% ;
+    padding-left: 2rem;
+    
+}
+.img_logo{
+    width: 20%;
+}
+
+.navegador{
+    padding-right: 2.5rem;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+}
+.link{
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    
+}
+
+.gris{
+    color: rgb(136,137,139);
+}
+.link_ticket2{
+    color: rgb(37,168, 66);
+    text-decoration: none;
+}
+.link_ticket{
+    text-decoration: none;
+    color: rgb(37,168, 66);
+    
+}
+.texto_h2{
+    color: white;
+    font-size: 1.5rem;
+    font-family: "Montserrat", 300;
+}
+.imagen_main{
+    width: 100%;
+}
+.justificado_final{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.section_principal{
+    background-image: linear-gradient(to right,rgb(0 0 0 /.5),rgb(0 0 0 /.5)), url("../assets/images/ba1.jpg");
+    height:100vh;
+    width: 100%;
+    display: flex;
+    justify-content:flex-end;
+    align-items:center;
+
+}
+.contenido_principal{
+    width: 60%;
+    text-align: right;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    padding: 2rem;
+    
+}
+.caja_links{ margin-top: 1rem;}
+
+.inline_block{ 
+    display: inline-block;
+    height: 6vh;
+    width: 12vw;
+    border: 1px solid white;
+    border-radius: 5px;
+    text-align: center;
+    padding: 0.3rem;
+    
+    
+}    
+.green{
+    background-color:  rgb(37,168, 66);
+    border: 1px solid rgb(37,168, 66);
+}
+
+.titulo_tarjetas{
+    text-align: center;
+    margin: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.textos_h2{
+    font-family: 'Montserrat', sans-serif, 'extraligero 200';
+    font-size: .8rem;
+    color: rgb(136,137,139);
+
+}
+
+.textos_h3{
+    font-size: 1.5rem;
+}
+
+
+.tarjetas{
+    
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    
+    
+}
+.tarjeta_flex{
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    
+
+   
+}
+.padre_de_tarjetas{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.tarjeta{
+    background-color: white;
+    width: 30%;
+    border: 1px solid rgba(128, 128, 128, 0.283);
+    border-radius: 5px;
+    
+}
+.etiquetas{ 
+    display: flex;
+    width: 40%;    
+    font-family: 'Montserrat', sans-serif;
+    justify-content: space-between;
+    font-size: .7rem;
+    
+}
+.java{
+    background-color: rgb(255, 193, 2);
+    border: solid  rgb(255, 193, 2) ;
+    border-radius: 5px;
+
+}
+.react{
+    background-color: rgb(20, 157, 176);
+    color: white;
+    border: solid rgb(20, 157, 176);
+    border-radius: 5px;
+    
+}
+    
+.neg{
+    background-color: rgb(108, 117, 124);
+    border: solid  rgb(108, 117, 124) ;
+    border-radius: 5px;
+    color: white;
+    
+}
+
+.star{
+    background-color: rgb(202, 57, 74);
+    border: solid  rgb(202, 57, 74) ;
+    border-radius: 5px;
+    color:white
+}
+.h3{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+    
+
+.tarjeta_parrafo{
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    text-align:justify;
+    line-height: 1;
+    
+}
+.tarjeta_imagen{
+    width: 100%;
+    border-radius: 5px
+}
+
+.tarjeta_contenido{
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.section_dividida{
+    display: flex;
+    height: 100vh;
+ }
+ .img_izq{
+        height: 100%;
+        width: 50%;
+        background-image: url(../assets/images/ba3.jpg);
+        background-size: cover;
+ }
+ .contenido_dere{
+    height:100%;
+    width:50%;
+    padding:2rem ;
+    background-color: #343333;
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align:left;
+    line-height: 1.6;
+    justify-content:center;
+ }
+ 
+ 
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    /*font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;*/
+}
+.enviar{
+    color: white;
+    height: 6vh;
+    
+    border-radius: 5px;
+    
+}
+
+.bg_footer{
+    background-color: rgb(27,56,72);
+    
+}
+
+@media screen and (max-width: 900px){
+        
+    .section_principal{
+        justify-content:center;
+    }
+    .contenido_principal{
+        width: 90%;
+        text-align: center;
+        
+    }
+    .caja_links{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        margin-bottom: 2%;
+    }
+   
+    .inline_block{ 
+        display: inline-block;
+        height: 4vh;
+        width: 50%;
+        border: 1px solid white;
+        border-radius: 5px;
+        text-align: center;
+        padding: 0.1rem;
+        margin-top: 1rem;
+    }
+    .green{
+        background-color:  rgb(37,168, 66);
+        border: 1px solid rgb(37,168, 66);
+    }
+    
+    .tarjeta_flex{
+        flex-direction: column;
+    }
+    
+    .tarjeta{
+        width: 100%;
+        margin-bottom: 1rem;
+        box-shadow: -7px -7px 50px 6px rgba(0,0,0,0.54);
+        -webkit-box-shadow: -7px -7px 50px 6px rgba(0,0,0,0.54);
+        -moz-box-shadow: -7px -7px 50px 6px rgba(0,0,0,0.54);
+    }
+
+    .section_dividida{
+        flex-direction: column;
+    }
+
+    .img_izq{width: 100%;
+    }
+
+    .contenido_dere{width: 100%;
+    font-size: 1rem;
+}}
