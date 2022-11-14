@@ -5,17 +5,149 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> Comprar tickets</title>
-        <link rel="stylesheet" href="./css/estilos.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/estilos.css">
     </head>
+
     <body>
-        <img src="" alt="Logo de codo a codo">
-        <h2>Conferencia Bs As</h2>
         
-        <a href="../Idex.html">La conferencia</a>
-        <a href="./los_oradores.html"> Los oradores</a>
-        <a href="./lugar_y_fecha.html"> Lugar y fecha </a>
-        <a href="./contacto.html"> Conviertete en orador</a>
-        <a href="#"> Comprar tikets</a>
-    
-    </body>
-</html>
+        <header >
+        <nav class="navbar navbar-expand-lg bg_gris">
+            <div class="container-fluid">
+              <a class="navbar-brand text-white" href="#">
+                <img src="../assets/images/codoacodo.png" alt="Logo de codo a codo " width="100" loading="lazy" >
+                Conferencia Bs. As.
+            </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 justificado_final  pe-4 ">
+                  <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="../Index.html">La conferencia</a>
+                  <li class="nav item"><a  class="nav-link text-muted" href="../Index.html"> Los oradores</a></li>
+                  <li class="nav item"><a  class="nav-link text-muted" href="../Index.html"> Lugar y fecha </a></li>
+                  <li class="nav item"><a  class="nav-link text-muted" href="../Index.html"> Conviértete en orador</a></li>
+                  <li class="nav item "><a  class="nav-link link_ticket" href="#"> Comprar tikets</a></li>
+                  
+              </div>
+            </div>
+          </nav>
+        </header>
+       
+        <main >
+            <div class="text-center align-item-center py-5 container" style="width: 100%">
+            <div class="row mx-5">
+                
+                <div class="col ml-5 start-left">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-header bg-primary text-center"><h4>Estudiantes</h4></div>
+                    <div class="card-body ">
+                        <div class="card-text text-center">
+                        <p>Descuento del</p>
+                        <h3>80%</h3>
+                        <p class="text-secondary">presentar documentación</p>
+                        </div>
+                    </div>
+                    </div>
+
+                </div>
+                
+                <div class="col ml-5">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-header bg-success text-center"><h4>Trainee</h4></div>
+                    <div class="card-body">
+                        <div class="card-text text-center">
+                        <p>Descuento del</p>
+                        <h3>50%</h3>
+                        <p class="text-secondary">presentar documentación</p>
+                        </div>
+                    </div>
+                    </div>
+
+                </div>
+
+                <div class="col ml-5">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-header bg-warning text-center"><h4>Junior</h4></div>
+                    <div class="card-body">
+                        <div class="card-text text-center">
+                        <p>Descuento del</p>
+                        <h3>15%</h3>
+                        <p class="text-secondary">presentar documentación</p>
+                        </div>
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </main>
+
+        <section class=" formulario container">
+            <p class="text-center">INICIAR COMPRA </p>
+            <h3 class="text-center">ENTRADA GENERAL</h3>
+
+            <div class="d-flex flex-wrap container " >
+                <form class="row g-4" action="">
+               
+                <div class="col-6">
+                    <input type="text" class="form-control"id="nombre" placeholder="Nombre" required>
+                </div>
+                <div class="col-6">
+                    <input type="text" class="form-control"id="apellido" placeholder="Apellido" required>
+                </div>
+                
+                <div class="col-12">
+                    <input type="email" class="form-control" id="mail" placeholder="name@example.com" required>
+                </div>
+                <div class="col-6">
+                    <label for="cantidadTickets" class="form-label">cantidad</label>
+                    <input type="number" class="form-control"id="cantidadTickets" placeholder="cantidad">
+                </div>
+                <div class="col-6">
+                    <label for="Categoria" class="form-label">Categoria</label>
+                    <select class="form-select" aria-label="Categoria" id="categoria">
+                        <option value="" selected>--Seleccione--</option>
+                    <option value="0">Sin categoria</option>
+                    <option value="1">Estudiante</option>
+                    <option value="2">Trainee</option>
+                    <option value="3">Junio</option>
+                  </select>
+                </div>
+                <div class="row g-4">
+                <div class="alert alert-primary mt-2 mb-4" role="alert"> 
+                    total a pagar:$ <span id="totalPago" class="aling-middle"></span>
+                </div></div>
+                <div class="col-12">
+                    <button type="reset" class="btn btn-lg btn-form" id="btnBorrar">Borrar</button>
+                    
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-primary" type="submit">Enviar</button>
+                  </div>
+            </form>
+            </div>
+        </section>
+
+        <footer class="bg_footer">
+            <div class="container">
+                 <div class="row ">
+                     <div class="col pt-3 pb-3"><a  class= "text-white text-decoration-none"  href="">Preguntas frecuntes</a></div>
+                     <div class="col pt-3 pb-3"><a  class= "text-white text-decoration-none"  href="">Contáctanos</a></div>
+                     <div class="col pt-3 pb-3"><a  class= "text-white text-decoration-none"  href="">Prensa</a></div>
+                     <div class="col pt-3 pb-3"><a  class= "text-white text-decoration-none"  href="">Conferencia</a></div>
+                     <div class="col pt-3 pb-3"><a  class= "text-white text-decoration-none " href="">Términos y condiciones</a></div>
+                     <div class="col pt-3 pb-3"><a  class= "text-white text-decoration-none"  href="">Privacidad</a></div>
+                     <div class="col pt-3 pb-3"><a  class= "text-white text-decoration-none"   href="">Estudiantes</a></div>
+                 </div>
+             </div>
+             
+           
+             
+         </footer>   
+     
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+    </body> 
+    </html>
