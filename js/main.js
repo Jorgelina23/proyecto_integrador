@@ -98,7 +98,7 @@ switch (totalValorTickets) {
     case 4:
         (categoria.value == 3) (totalValorTickets * totalValorTickets - (descJunior / 100 * totalValorTickets))
     break
-    default
+    default:
 }
 
 totalPago.innerHTML = totalValorTickets //innerHTML es una propiedad q permite insertar un valor en el id que indico 
