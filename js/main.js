@@ -1,17 +1,20 @@
 //levanto las var.
-const valorTicket = 200;
+const valorTicket   =   200;
 
-let descEstudiante = 80;
-let descTrainee = 50;
-let descJunior = 15;
 
-let nombre = document.getElementById("nombre");
-let apellido = document.getElementById("apellido");
-let mail = document.getElementById("mail");
-let cantidadTickets = document.getElementById("cantidadTickets");
-let categoria = document.getElementById("categoria");
+let descEstudiante  =   80;
+let descTrainee     =   50;
+let descJunior      =   15;
 
-const emailValido = mail => {
+
+let nombre          =   document.getElementById("nombre");
+let apellido        =   document.getElementById("apellido");
+let mail            =   document.getElementById("mail");
+let cantidadTickets =   document.getElementById("cantidadTickets");
+let categoria       =   document.getElementById("categoria");
+
+
+const emailValido   =  mail => {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test (mail); // exprecion regular. 
 }
 
@@ -19,10 +22,11 @@ function quitarClaseError(){
     let x = document.querySelectorAll(".form-control, form-select"); //querySelectorAll es un metodo que devuelve un array de elemento, este caso los q tiene form-control y form-select
     let i;
     //como es un array con un for recorro el array por todo el total del array (length) y a cada uno de los elemntos le removemos is-invalid
-    for (i=0; i < x.length; i++){
-        x[i].classList.remove('is-invalid')
+    for (i =0 ; i < x.length; i++){
+        x[i].classList.remove('is-invalid');
     }
 }
+
 function resetTotalAPpagar(){
     quitarClaseError();
     totalPago.innerHTML = "";
@@ -30,78 +34,103 @@ function resetTotalAPpagar(){
 
 function totalAPagar() {
     quitarClaseError();
-}
+
 
 //validaciones
 //valida nombre
+
 if (nombre.value === ""){  
-    alert ("Por favor, escribí tu nombre.");
-    nombre.classList.add ("is-ivalid");
+    nombre.classList.add ("is-invalid");
     nombre.focus();
+    alert ("Por favor, escribí tu nombre.");
     return;
 }
 
 //valida apellidos
 if (apellido.value === ""){
-    alert ("Por favor, escribí tu apellido.");
     apellido.classList.add ("is-invalid");
     apellido.focus();
+    alert ("Por favor, escribí tu apellido.");
     return;
 }
 
 //valida mail
 if (mail.value === ""){
-    alert ("Por favor, escribí tu email.");
     mail.classList.add ("is-invalid");
     mail.focus();
+    alert ("Por favor, escribí tu email.");
     return;
 }
 
 // valida si el mail ingresado no es valido 
 if (!emailValido(mail.value)){
-    alert("Por favor, escribí un correo electronico valido,");
     mail.classList.add ("is-invalid");
     mail.focus();
+    alert("Por favor, escribí un correo electronico valido,");
     return;
 }
 
 //valida si selecciono cantidad de tickets
 if ( (cantidadTickets.value == 0) || (isNaN(cantidadTickets.value)) ) {
-    alert ("Por favor, ingresá correctamente cantidad de tickets.");
     cantidadTickets.classList.add ("is-invalid");
     cantidadTickets.focus();
-    return;
+    alert ("Por favor, ingresá correctamente cantidad de tickets.");
+    
 }
 
 //valida si selecciono cat.
 if (categoria.value == ""){
-    alert ("Por favor, selecioná una categoría.");
     categoria.classList.add ("is-invalid");
     categoria.focus();
-    return
-}
+    alert ("Por favor, selecioná una categoría.");
+      
+}}
 
 //logica
 let totalValorTickets = (cantidadTickets.value) * valorTicket;
 //switch o anidado de if 
 
 switch (totalValorTickets) {
-    case 1: 
-        (categoria.value == 0)(totalValorTickets * totalValorTickets)
-    break
-    case 2: 
-        (categoria.value == 1)(totalValorTickets* totalValorTickets - (descEstudiante / 100 * totalValorTickets))
+    case 0:
+    (categoria.value == 0) = (totalValorTickets = totalValorTickets)
+    break;
+    case 1:
+    (categoria.value == 1) = (totalValorTickets = totalValorTickets - ((descEstudiante / 100) * totalValorTickets))
+    break;
+    case 2:
+    (categoria.value == 2) = (totalValorTickets = totalValorTickets- ((descTrainee / 100) * totalValorTickets))
     break
     case 3:
-        (categoria.value == 2)(totalValorTickets * totalValorTickets - (descTrainee / 100 * totalValorTickets))
-    break
-    case 4:
-        (categoria.value == 3) (totalValorTickets * totalValorTickets - (descJunior / 100 * totalValorTickets))
+    (categoria.value == 3) = (totalValorTickets = totalValorTickets - ((descJunior / 100) * totalValorTickets))
     break
     default:
-}
+    }
 
 totalPago.innerHTML = totalValorTickets //innerHTML es una propiedad q permite insertar un valor en el id que indico 
 
+/*
+
+switch (categoria.value) 
+ { 
+        case "0":
+        totalPago.innerHTML = (totalValorTickets = totalValorTickets);
+        break;
+          
+        case"1":
+        totalPago.innerHTML = (totalValorTickets= (totalValorTickets - ( descEstudiante/100*totalValorTickets)))
+        break
+    
+        case"2":
+        totalPago.innerHTML = (totalValorTickets = (totalValorTickets-(descTrainee/100*totalValorTickets)))
+        break;
+        
+        case"3":
+        totalPago.innerHTML = (totalValorTickets =(totalValorTickets-(descJunior/100*totalValorTickets)))
+        break;
+        default:
+        break;
+     }    */
 btnResumen.addEventListener('click', totalAPagar);
+console.log()
+
 btnBorrar.addEventListener('click', resetTotalAPpagar);
